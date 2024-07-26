@@ -22,3 +22,4 @@ brew "git-identity-manager"
 Automated updating of forumla using the following github actions:
 - [Homebrew bump formula GitHub Action](https://github.com/dawidd6/action-homebrew-bump-formula) by dawidd6
 - [Find PR](https://github.com/juliangruber/find-pull-request-action/blob/master/action.yml) and [Merge PR](https://github.com/juliangruber/merge-pull-request-action) Github Actions by juliangruber
+- [Get Latest Release](https://github.com/pozetroninc/github-action-get-latest-release) by pozetroninc
