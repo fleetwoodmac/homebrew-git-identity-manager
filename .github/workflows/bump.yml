@@ -1,0 +1,23 @@
+name: Update homebrew forumla
+on:
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  test_schedule:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get latest release
+      id: get-git-idm
+      uses: pozetroninc/github-action-get-latest-release@master
+      with:
+        repository: samrocketman/git-identity-manager
+    - name: Update Homebrew formula
+      uses: dawidd6/action-homebrew-bump-formula@v3
+      with:
+        token: ${{secrets.HOMEBREW_GITHUB_API_TOKEN}}
+        no_fork: false
+        tap: fleetwoodmac/git-identity-manager
+        formula: git-identity-manager
+        force: true # true
+        tag: ${{ steps.get-git-idm.outputs.release }}
