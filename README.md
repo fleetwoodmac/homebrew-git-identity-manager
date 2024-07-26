@@ -19,7 +19,7 @@ brew "git-identity-manager"
 
 First, run `git idm uninstall` as shown in samrocketman's documentation [here](https://github.com/samrocketman/git-identity-manager)
 
-Then, run 'brew uninstall git-identity-manager`.
+Then, run 'brew uninstall git-identity-manager`
 
 Finally, untap this repo by running `brew untap fleetwoodmac/git-identity-manager`
 
