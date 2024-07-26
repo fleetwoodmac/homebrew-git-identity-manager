@@ -1,0 +1,24 @@
+name: Merge Bump PR
+
+on:
+  pull_request:
+    types: [opened]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.pull_request.user.login == 'fleetwoodmac'}}
+    steps:
+    - name: Find Pull Request
+      uses: juliangruber/find-pull-request-action@v1
+      id: find-pull-request
+      with:
+        author: fleetwoodmac
+        state: open
+    - name: Merge Pull Request
+      uses: juliangruber/merge-pull-request-action@v1
+      with:
+        github-token: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
+        number: ${{steps.find-pull-request.outputs.number}}
+        method: merge 
+    
