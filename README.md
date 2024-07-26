@@ -1,4 +1,6 @@
-# Fleetwoodmac Git-identity-manager
+# Homebrew Formula for samrocketman's git-identity-manager project
+
+Project is located here: https://github.com/samrocketman/git-identity-manager
 
 ## How do I install these formulae?
 
