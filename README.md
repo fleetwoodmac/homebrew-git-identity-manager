@@ -2,7 +2,7 @@
 
 Project is located here: https://github.com/samrocketman/git-identity-manager
 
-## How do I install these formulae?
+## How do I install this formula?
 
 `brew install fleetwoodmac/git-identity-manager/git-identity-manager`
 
@@ -14,6 +14,15 @@ Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`
 tap "fleetwoodmac/git-identity-manager"
 brew "git-identity-manager"
 ```
+
+## How do I uninstall this formula?
+
+First, run `git idm uninstall` as shown in samrocketman's documentation [here](https://github.com/samrocketman/git-identity-manager)
+
+Then, run 'brew uninstall git-identity-manager`.
+
+Finally, untap this repo by running `brew untap fleetwoodmac/git-identity-manager`
+
 
 ## Documentation
 
